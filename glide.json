@@ -1,27 +1,12 @@
 {
   "kind": "column",
-  "name": "Customized bar chart",
+  "name": "Customized quadrant chart",
   "description": "",
   "author": "Thinh Dinh <thinh@lowcode.agency>",
   "params": [
     {
       "name": "data",
       "displayName": "Data",
-      "type": "string"
-    },
-    {
-      "name": "width",
-      "displayName": "Width (default to 100vw)",
-      "type": "number"
-    },
-    {
-      "name": "height",
-      "displayName": "Height (default to 80vh)",
-      "type": "number"
-    },
-    {
-      "name": "tooltips",
-      "displayName": "Tooltip labels",
       "type": "string"
     }
   ],
