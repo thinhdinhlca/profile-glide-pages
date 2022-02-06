@@ -73,6 +73,11 @@ window.function = function (data, width, height) {
   options: {
     responsive: true,
     maintainAspectRatio: false,
+    plugins: {
+    datalabels: {
+        display: false,
+    },
+},
     legend: {
         display: false
     },
