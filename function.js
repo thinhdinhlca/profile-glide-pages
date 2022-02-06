@@ -1,10 +1,12 @@
 // https://www.chartjs.org/
 
 
-window.function = function (data) {
+window.function = function (data, width, height) {
 
   // data
   data = data.value ?? "";
+  width = width.value ?? "100";
+  height= height.value ?? "100";
 
   let ht = `<!DOCTYPE html>
 <html>
@@ -15,7 +17,7 @@ window.function = function (data) {
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.7.0/dist/chartjs-plugin-datalabels.min.js"></script>
   </head>
   <body>
-  <div class="chart-container" style="position: relative; height:100vh; width:80vw">
+  <div class="chart-container" style="position: relative; height:${height}vh; width:{width}vw">
   <canvas id="gr1"></canvas>
 </div>
     <script>
