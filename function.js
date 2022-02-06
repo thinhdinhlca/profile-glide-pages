@@ -18,10 +18,20 @@ window.function = function (data) {
   <div class="container" style="position: relative; height:100vh; width:80vw">
   <canvas id="gr1"></canvas>
 </div>
+<script>
    anychart.onDocumentReady(function () {
 
 	// create data
-	var data = [${data}
+	var data = [
+	  {x: 40, value: 42},
+	  {x: 13, value: 59},
+	  {x: 25, value: 68},
+	  {x: 25, value: 63},
+	  {x: 44, value: 54},
+	  {x: 55, value: 58},
+	  {x: 56, value: 46},
+	  {x: 60, value: 54},
+	  {x: 72, value: 73}
 	];
 
     // create a chart
@@ -36,6 +46,7 @@ window.function = function (data) {
     // initiate drawing the chart
     chart.draw();
 });
+</script>
   </body>
 </html>`
 
