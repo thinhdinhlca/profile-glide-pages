@@ -17,7 +17,7 @@ window.function = function (data, width, height) {
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.7.0/dist/chartjs-plugin-datalabels.min.js"></script>
   </head>
   <body>
-  <div class="chart-container" style="position: relative; height:${height}vh; width:{width}vw">
+  <div class="chart-container" style="position: relative; height:${height}vh; width:${width}vw">
   <canvas id="gr1"></canvas>
 </div>
     <script>
