@@ -11,42 +11,81 @@ window.function = function (data) {
   <head>
     <meta charset="utf-8">
     <title>Glide Yes-Code</title>
-    <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-core.min.js"></script>
-    <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-scatter.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.7.0/dist/chartjs-plugin-datalabels.min.js"></script>
   </head>
   <body>
-  <div class="container" style="position: relative; height:100vh; width:80vw">
+  <div class="chart-container" style="position: relative; height:100vh; width:80vw">
   <canvas id="gr1"></canvas>
 </div>
-<script>
-   anychart.onDocumentReady(function () {
+    <script>
+    let config = {
+  type: 'bubble',
+  data: {
+    datasets: [
+      {
+        label: 'My First dataset',
+        backgroundColor: ["red","blue","green","purple","gold","black"],
+        borderColor: ["red","blue","green","purple","gold","black"],
+        borderWidth: 1,
+        data: [
+          {
+            x: 62,
+            y: 94,
+            r: 9.8,
+          },
+          {
+            x: -62,
+            y: -34,
+            r: 7.4,
+          },
+          {
+            x: 8,
+            y: 60,
+            r: 1.8,
+          },
+          {
+            x: -44,
+            y: 59,
+            r: 9.4,
+          },
+          {
+            x: 64,
+            y: 46,
+            r: 6.8,
+          },
+          {
+            x: 16,
+            y: -95,
+            r: 10.8,
+          },
+          {
+            x: 95,
+            y: -80,
+            r: 1.8,
+          },
+        ],
+      }
+    ],
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    legend: {
+        display: false
+    },
+    title: {
+      display: true,
+      text: 'Chart.js Bubble Chart',
+    },
+  },
+}
+;
 
-	// create data
-	var data = [
-	  {x: 40, value: 42},
-	  {x: 13, value: 59},
-	  {x: 25, value: 68},
-	  {x: 25, value: 63},
-	  {x: 44, value: 54},
-	  {x: 55, value: 58},
-	  {x: 56, value: 46},
-	  {x: 60, value: 54},
-	  {x: 72, value: 73}
-	];
-
-    // create a chart
-    var chart = anychart.quadrant(data);
-
-    // set the chart title
-    chart.title("Quadrant Chart: Basic Sample");
-
-    // set the container id
-    chart.container("container");
-
-    // initiate drawing the chart
-    chart.draw();
-});
-</script>
+    var canv = document.getElementById('gr1');
+    var ctx = canv.getContext('2d');
+    let graph1 = new Chart(ctx, config);
+    </script>
   </body>
 </html>`
 
