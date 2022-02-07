@@ -18,11 +18,6 @@
       "name": "height",
       "displayName": "Height (default to 100%)",
       "type": "string"
-    },
-    {
-      "name": "title",
-      "displayName": "Chart title",
-      "type": "string"
     }
   ],
   "result": {
