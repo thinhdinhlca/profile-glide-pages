@@ -1,12 +1,13 @@
 // https://www.chartjs.org/
 
 
-window.function = function (data, width, height) {
+window.function = function (data, width, height, title) {
 
   // data
   data = data.value ?? "";
   width = width.value ?? "100";
   height= height.value ?? "100";
+  title = title.value ?? "";
 
   let ht = `<!DOCTYPE html>
 <html>
@@ -83,7 +84,7 @@ window.function = function (data, width, height) {
     },
     title: {
       display: true,
-      text: 'Chart.js Bubble Chart',
+      text: '${title}',
     },
   },
 }
