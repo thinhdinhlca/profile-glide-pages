@@ -18,7 +18,17 @@
       "name": "height",
       "displayName": "Height (default to 100%)",
       "type": "string"
-    }
+    },
+    {
+      "name": "colors",
+      "displayName": "List of colors",
+      "type": "string"
+    },
+    {
+      "name": "labels",
+      "displayName": "List of data labels",
+      "type": "string"
+    },
   ],
   "result": {
     "type": "uri"
