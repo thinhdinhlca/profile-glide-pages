@@ -1,6 +1,6 @@
 {
   "kind": "column",
-  "name": "Customized quadrant chart",
+  "name": "Customized bubble chart",
   "description": "",
   "author": "Thinh Dinh <thinh@lowcode.agency>",
   "params": [
