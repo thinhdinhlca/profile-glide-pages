@@ -1,13 +1,12 @@
 // https://www.chartjs.org/
 
 
-window.function = function (data, width, height, title) {
+window.function = function (data, width, height) {
 
   // data
   data = data.value ?? "";
   width = width.value ?? "100";
   height= height.value ?? "100";
-  title = title.value ?? "";
 
   let ht = `<!DOCTYPE html>
 <html>
@@ -83,8 +82,7 @@ window.function = function (data, width, height, title) {
         display: false
     },
     title: {
-      display: true,
-      text: '${title}',
+      display: false
     },
   },
 }
