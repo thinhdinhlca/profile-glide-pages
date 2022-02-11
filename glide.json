@@ -1,7 +1,7 @@
 {
   "kind": "column",
   "name": "Customized bubble chart",
-  "description": "",
+  "description": "Customized bubble chart with label",
   "author": "Thinh Dinh <thinh@lowcode.agency>",
   "params": [
     {
