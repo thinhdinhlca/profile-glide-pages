@@ -1,12 +1,14 @@
 // https://www.chartjs.org/
 
 
-window.function = function (data, width, height) {
+window.function = function (data, width, height, colors, labels) {
 
   // data
   data = data.value ?? "";
   width = width.value ?? "100";
   height= height.value ?? "100";
+  colors = colors.value ?? "";
+  labels = labels.value ?? "";
 
   let ht = `<!DOCTYPE html>
 <html>
