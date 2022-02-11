@@ -26,49 +26,15 @@ window.function = function (data, width, height, colors, labels) {
     let config = {
   type: 'bubble',
   data: {
-    labels: ["Andrea","Betty","Charles","Dan","Ernie","Felicia","Goran"],
+    labels: [${labels}],
     datasets: [
       {
         label: 'My First dataset',
-        backgroundColor: ["red","blue","green","purple","gold","black"],
-        borderColor: ["red","blue","green","purple","gold","black"],
+        backgroundColor: [${colors}],
+        borderColor: [${colors}],
         borderWidth: 1,
         data: [
-          {
-            x: 6,
-            y: 9,
-            r: 9.8,
-          },
-          {
-            x: 1,
-            y: 3,
-            r: 7.5,
-          },
-          {
-            x: 8,
-            y: 6,
-            r: 1.8,
-          },
-          {
-            x: 4,
-            y: 6,
-            r: 9.4,
-          },
-          {
-            x: 64,
-            y: 46,
-            r: 6.8,
-          },
-          {
-            x: 2,
-            y: 5,
-            r: 1.8,
-          },
-          {
-            x: 9,
-            y: 2,
-            r: 2.4,
-          },
+          ${data}
         ],
       }
     ],
