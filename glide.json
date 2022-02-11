@@ -28,7 +28,7 @@
       "name": "labels",
       "displayName": "List of data labels",
       "type": "string"
-    },
+    }
   ],
   "result": {
     "type": "uri"
