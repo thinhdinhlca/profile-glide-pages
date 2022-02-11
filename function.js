@@ -26,6 +26,7 @@ window.function = function (data, width, height, colors, labels) {
     let config = {
   type: 'bubble',
   data: {
+    labels: ["Andrea","Betty","Charles","Dan","Ernie","Felicia","Goran"],
     datasets: [
       {
         label: 'My First dataset',
@@ -34,23 +35,23 @@ window.function = function (data, width, height, colors, labels) {
         borderWidth: 1,
         data: [
           {
-            x: 62,
-            y: 94,
+            x: 6,
+            y: 9,
             r: 9.8,
           },
           {
-            x: -62,
-            y: -34,
-            r: 7.4,
+            x: 1,
+            y: 3,
+            r: 7.5,
           },
           {
             x: 8,
-            y: 60,
+            y: 6,
             r: 1.8,
           },
           {
-            x: -44,
-            y: 59,
+            x: 4,
+            y: 6,
             r: 9.4,
           },
           {
@@ -59,14 +60,14 @@ window.function = function (data, width, height, colors, labels) {
             r: 6.8,
           },
           {
-            x: 16,
-            y: -95,
-            r: 10.8,
+            x: 2,
+            y: 5,
+            r: 1.8,
           },
           {
-            x: 95,
-            y: -80,
-            r: 1.8,
+            x: 9,
+            y: 2,
+            r: 2.4,
           },
         ],
       }
@@ -75,9 +76,50 @@ window.function = function (data, width, height, colors, labels) {
   options: {
     responsive: true,
     maintainAspectRatio: false,
+    layout: {
+      padding: 10
+    },
+    scales: {
+                    xAxes: [{
+                            display: true,
+                            ticks: {
+                                beginAtZero: true,
+                                steps: 10,
+                                stepValue: 1,
+                                max: 10
+                            },
+                            scaleLabel: {
+                                display: true,
+                                labelString: 'Likelihood'
+                            }
+                        }],
+                    yAxes: [{
+                            display: true,
+                            ticks: {
+                                beginAtZero: true,
+                                steps: 10,
+                                stepValue: 1,
+                                max: 10
+                            },
+                            scaleLabel: {
+                                display: true,
+                                labelString: 'Impact'
+                            }
+                        }]
+                },
     plugins: {
     datalabels: {
-        display: false,
+        display: "auto",
+        align: "bottom",
+        clip: "true",
+        font: {
+          weight: 'bold',
+          size: 10,
+        },
+        padding: 10,
+        formatter: function(value, context) {
+          return context.chart.data.labels[context.dataIndex];
+        }
     },
 },
     legend: {
