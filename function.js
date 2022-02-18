@@ -42,25 +42,6 @@ window.function = function (data, width, height, colors, labels) {
   options: {
     responsive: true,
     maintainAspectRatio: false,
-    annotation: {
-    annotations: [{
-        type: 'line',
-        mode: 'horizontal',
-        scaleID: 'y-axis-0',
-        value: '5',
-        borderColor: '#00008b',
-        borderWidth: 1
-    },
-    {
-        type: 'line',
-        mode: 'vertical',
-        scaleID: 'x-axis-0',
-        value: '5',
-        borderColor: '#00008b',
-        borderWidth: 1
-    }
-    ]
-},
     layout: {
       padding: 10
     },
@@ -93,6 +74,25 @@ window.function = function (data, width, height, colors, labels) {
                         }]
                 },
     plugins: {
+    annotation: {
+    annotations: [{
+        type: 'line',
+        mode: 'horizontal',
+        scaleID: 'y-axis-0',
+        value: '5',
+        borderColor: '#00008b',
+        borderWidth: 1
+    },
+    {
+        type: 'line',
+        mode: 'vertical',
+        scaleID: 'x-axis-0',
+        value: '5',
+        borderColor: '#00008b',
+        borderWidth: 1
+    }
+    ]
+},
     datalabels: {
         display: "auto",
         align: "bottom",
