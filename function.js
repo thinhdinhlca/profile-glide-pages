@@ -42,6 +42,26 @@ window.function = function (data, width, height, colors, labels) {
   options: {
     responsive: true,
     maintainAspectRatio: false,
+    annotation: {
+    annotations: [{
+        type: 'line',
+        mode: 'horizontal',
+        scaleID: 'y-axis-0',
+        value: '5',
+        borderColor: '#00008b',
+        borderWidth: 5
+    },
+    {
+        type: 'line',
+        mode: 'horizontal',
+        scaleID: 'x-axis-0',
+        value: '5',
+        borderColor: '#00008b',
+        borderWidth: 5
+    }
+    ],
+    drawTime: "afterDraw" // (default)
+}
     layout: {
       padding: 10
     },
