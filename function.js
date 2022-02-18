@@ -49,7 +49,7 @@ window.function = function (data, width, height, colors, labels) {
         scaleID: 'y-axis-0',
         value: '5',
         borderColor: '#00008b',
-        borderWidth: 5
+        borderWidth: 1
     },
     {
         type: 'line',
@@ -57,10 +57,9 @@ window.function = function (data, width, height, colors, labels) {
         scaleID: 'x-axis-0',
         value: '5',
         borderColor: '#00008b',
-        borderWidth: 5
+        borderWidth: 1
     }
-    ],
-    drawTime: "afterDraw" // (default)
+    ]
 },
     layout: {
       padding: 10
