@@ -53,7 +53,7 @@ window.function = function (data, width, height, colors, labels) {
     },
     {
         type: 'line',
-        mode: 'horizontal',
+        mode: 'vertical',
         scaleID: 'x-axis-0',
         value: '5',
         borderColor: '#00008b',
@@ -61,7 +61,7 @@ window.function = function (data, width, height, colors, labels) {
     }
     ],
     drawTime: "afterDraw" // (default)
-}
+},
     layout: {
       padding: 10
     },
