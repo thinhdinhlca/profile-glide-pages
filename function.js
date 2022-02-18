@@ -15,9 +15,8 @@ window.function = function (data, width, height, colors, labels) {
   <head>
     <meta charset="utf-8">
     <title>Glide Yes-Code</title>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0/dist/chartjs-plugin-datalabels.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.3.1/dist/chartjs-plugin-annotation.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.7.0/dist/chartjs-plugin-datalabels.min.js"></script>
   </head>
   <body>
   <div class="chart-container" style="position: relative; height:${height}vh; width:${width}vw">
@@ -75,25 +74,6 @@ window.function = function (data, width, height, colors, labels) {
                         }]
                 },
     plugins: {
-    annotation: {
-    annotations: [{
-        type: 'line',
-        mode: 'horizontal',
-        scaleID: 'y-axis-0',
-        value: '5',
-        borderColor: '#00008b',
-        borderWidth: 1
-    },
-    {
-        type: 'line',
-        mode: 'vertical',
-        scaleID: 'x-axis-0',
-        value: '5',
-        borderColor: '#00008b',
-        borderWidth: 1
-    }
-    ]
-},
     datalabels: {
         display: "auto",
         align: "bottom",
@@ -117,7 +97,6 @@ window.function = function (data, width, height, colors, labels) {
   },
 }
 ;
-
     var canv = document.getElementById('gr1');
     var ctx = canv.getContext('2d');
     let graph1 = new Chart(ctx, config);
