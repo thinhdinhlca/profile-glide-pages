@@ -1,6 +1,3 @@
-// https://www.chartjs.org/
-
-
 window.function = function (cover,avatar) {
 
   // data
@@ -31,10 +28,8 @@ window.function = function (cover,avatar) {
   <img class="profile-picture" src="https://unsplash.it/300/300/?random&pic=1(14 kB)" alt="profile-picture">
 </div>
 <!-- test -->
-   
-  </body>
-  
-  <style>
+
+<style>
   .header-text {
   background-color: rgba(176,176,176,0.7)
   }
@@ -62,6 +57,10 @@ window.function = function (cover,avatar) {
   }
   
   </style>
+   
+  </body>
+  
+  
 </html>`
 
   let enc = encodeURIComponent(ht);
