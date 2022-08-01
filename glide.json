@@ -1,32 +1,17 @@
 {
   "kind": "column",
-  "name": "Customized bubble chart",
-  "description": "Customized bubble chart with label",
+  "name": "Customized profile header for Glide Pages",
+  "description": "Customized profile header for Glide Pages",
   "author": "Thinh Dinh <thinh@lowcode.agency>",
   "params": [
     {
-      "name": "data",
-      "displayName": "Data",
+      "name": "cover",
+      "displayName": "Cover",
       "type": "string"
     },
     {
-      "name": "width",
-      "displayName": "Width (default to 100%)",
-      "type": "string"
-    },
-    {
-      "name": "height",
-      "displayName": "Height (default to 100%)",
-      "type": "string"
-    },
-    {
-      "name": "colors",
-      "displayName": "List of colors",
-      "type": "string"
-    },
-    {
-      "name": "labels",
-      "displayName": "List of data labels",
+      "name": "avatar",
+      "displayName": "Avatar",
       "type": "string"
     }
   ],
