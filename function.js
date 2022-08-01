@@ -1,15 +1,14 @@
 // https://www.chartjs.org/
 
 
-window.function = function (data, width, height, colors, labels) {
+window.function = function (cover,avatar) {
 
   // data
-  data = data.value ?? "";
-  width = width.value ?? "100";
-  height= height.value ?? "100";
-  colors = colors.value ?? "";
-  labels = labels.value ?? "";
-
+  cover = cover.value ?? "";
+  avatar = avatar.value ?? "";
+  let height = 100;
+  let width = 100;
+  
   let ht = `<!DOCTYPE html>
 <html>
   <head>
@@ -19,89 +18,50 @@ window.function = function (data, width, height, colors, labels) {
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.7.0/dist/chartjs-plugin-datalabels.min.js"></script>
   </head>
   <body>
-  <div class="chart-container" style="position: relative; height:${height}vh; width:${width}vw">
-  <canvas id="gr1"></canvas>
+  
+  <!-- header-->
+<div class="columns the-header is-marginless">
+    <img class="header-background" src="https://unsplash.it/1000/1000/?random&pic=1" id="header-background-id" alt="background-img">
+  </div>
 </div>
-    <script>
-    let config = {
-  type: 'bubble',
-  data: {
-    labels: [${labels}],
-    datasets: [
-      {
-        label: 'My First dataset',
-        backgroundColor: [${colors}],
-        borderColor: [${colors}],
-        borderWidth: 1,
-        data: [
-          ${data}
-        ],
-      }
-    ],
-  },
-  options: {
-    responsive: true,
-    maintainAspectRatio: false,
-    layout: {
-      padding: 10
-    },
-    scales: {
-                    xAxes: [{
-                            display: true,
-                            ticks: {
-                                beginAtZero: true,
-                                steps: 10,
-                                stepValue: 1,
-                                max: 10
-                            },
-                            scaleLabel: {
-                                display: true,
-                                labelString: 'Likelihood'
-                            }
-                        }],
-                    yAxes: [{
-                            display: true,
-                            ticks: {
-                                beginAtZero: true,
-                                steps: 10,
-                                stepValue: 1,
-                                max: 10
-                            },
-                            scaleLabel: {
-                                display: true,
-                                labelString: 'Impact'
-                            }
-                        }]
-                },
-    plugins: {
-    datalabels: {
-        display: "auto",
-        align: "bottom",
-        clip: "true",
-        font: {
-          weight: 'bold',
-          size: 10,
-        },
-        padding: 10,
-        formatter: function(value, context) {
-          return context.chart.data.labels[context.dataIndex];
-        }
-    },
-},
-    legend: {
-        display: false
-    },
-    title: {
-      display: false
-    },
-  },
-}
-;
-    var canv = document.getElementById('gr1');
-    var ctx = canv.getContext('2d');
-    let graph1 = new Chart(ctx, config);
-    </script>
+
+<!-- header ends -->
+<!-- test -->
+<div class="column is-12 has-text-centered">
+  <img class="profile-picture" src="https://unsplash.it/300/300/?random&pic=1(14 kB)" alt="profile-picture">
+</div>
+<!-- test -->
+   
   </body>
+  
+  <style>
+  .header-text {
+  background-color: rgba(176,176,176,0.7)
+  }
+  
+.the-header {
+  position: relative
+  padding: 100px 20px
+  }
+  
+.header-background {
+  position: absolute
+  width: 100%
+  object-fit: cover
+  z-index: -100
+  bottom: 0
+  left: 0
+  right: 0
+  }
+  
+.profile-picture {
+  border-radius: 50%
+  height: 150px
+  width: 150px
+  margin-top: -75px
+  }
+  
+  </style>
 </html>`
 
   let enc = encodeURIComponent(ht);
