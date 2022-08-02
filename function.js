@@ -48,8 +48,8 @@ window.function = function (cover,avatar) {
 
 .profile-picture {
   border-radius: 50%;
-  height: 10em;
-  width: 10em;
+  height: 15vw;
+  width: 15vw;
   margin-top: -75px;
   display: block;
   margin-left: auto;
