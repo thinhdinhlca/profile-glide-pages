@@ -58,6 +58,8 @@ window.function = function (cover,avatar) {
 .user-name {
   font-size: 40px;
   font-weight: 600;
+  vertical-align: 25px;
+  margin-left: 10px;
 }
   
   </style>
