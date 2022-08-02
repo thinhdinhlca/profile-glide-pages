@@ -18,14 +18,14 @@ window.function = function (cover,avatar) {
   
   <!-- header-->
 <div class="columns the-header is-marginless">
-    <img class="header-background" src="https://unsplash.it/1000/1000/?random&pic=1" id="header-background-id" alt="background-img">
+    <img class="header-background" src="${cover}" id="header-background-id" alt="background-img">
   </div>
 </div>
 
 <!-- header ends -->
 <!-- test -->
 <div class="column is-12 has-text-centered">
-  <img class="profile-picture" src="https://unsplash.it/300/300/?random&pic=1(14 kB)" alt="profile-picture">
+  <img class="profile-picture" src="${avatar}" alt="profile-picture">
 </div>
 <!-- test -->
   
