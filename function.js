@@ -63,6 +63,8 @@ font-weight: 800;
 line-height:1.2;
 letter-spacing: -0.02em;
 text-align: center;
+font-family: Inter, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+padding-top: 10px;
 }
   
   </style>
