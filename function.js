@@ -25,8 +25,7 @@ window.function = function (cover,avatar) {
 <!-- header ends -->
 <!-- test -->
 <div class="column is-12 has-text-centered">
-  <img class="profile-picture" src="https://unsplash.it/300/300/?random&pic=1(14 kB)" style="display:inline;" alt="profile-picture">
-  <div class="user-name" style="display:inline; white-space:nowrap;"> Thinh Dinh</div>
+  <img class="profile-picture" src="https://unsplash.it/300/300/?random&pic=1(14 kB)" alt="profile-picture">
 </div>
 <!-- test -->
   
@@ -52,14 +51,9 @@ window.function = function (cover,avatar) {
   height: 150px;
   width: 150px;
   margin-top: -75px;
-  margin-left: 20px;
-}
-
-.user-name {
-  font-size: 40px;
-  font-weight: 600;
-  vertical-align: 25px;
-  margin-left: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
   
   </style>
