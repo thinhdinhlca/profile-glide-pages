@@ -25,8 +25,8 @@ window.function = function (cover,avatar) {
 <!-- header ends -->
 <!-- test -->
 <div class="column is-12 has-text-centered">
-  <img class="profile-picture" src="https://unsplash.it/300/300/?random&pic=1(14 kB)" alt="profile-picture">
-  <div class="user-name"> Thinh Dinh</div>
+  <img class="profile-picture" src="https://unsplash.it/300/300/?random&pic=1(14 kB)" style="display:inline;" alt="profile-picture">
+  <div class="user-name" style="display:inline; white-space:nowrap;"> Thinh Dinh</div>
 </div>
 <!-- test -->
   
