@@ -26,6 +26,7 @@ window.function = function (cover,avatar) {
 <!-- test -->
 <div class="column is-12 has-text-centered">
   <img class="profile-picture" src="${avatar}" alt="profile-picture">
+  <div class="user-name">Thinh Dinh</div>
 </div>
 <!-- test -->
   
@@ -48,12 +49,18 @@ window.function = function (cover,avatar) {
 
 .profile-picture {
   border-radius: 50%;
-  height: 15vw;
-  width: 15vw;
+  height: 8em;
+  width: 8em;
   margin-top: -75px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.user-name {
+font-size: 20px;
+font-weight: 550;
+text-align: center;
 }
   
   </style>
