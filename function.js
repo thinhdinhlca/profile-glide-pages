@@ -29,6 +29,10 @@ window.function = function (cover,avatar) {
 </div>
 <!-- test -->
 
+<div class="user-name">
+  Thinh Dinh
+  </div>
+  
 <style>
 
 .the-header {
@@ -52,6 +56,11 @@ window.function = function (cover,avatar) {
   width: 150px;
   margin-top: -75px;
   margin-left: 20px;
+}
+
+.user-name {
+  font-size: 40px;
+  font-weight: 600;
 }
   
   </style>
