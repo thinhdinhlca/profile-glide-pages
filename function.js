@@ -29,9 +29,7 @@ window.function = function (cover,avatar) {
 </div>
 <!-- test -->
 
-<div class="user-name">
-  Thinh Dinh
-  </div>
+<div class="user-name"> Thinh Dinh</div>
   
 <style>
 
