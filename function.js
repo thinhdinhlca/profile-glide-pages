@@ -58,8 +58,10 @@ window.function = function (cover,avatar) {
 }
 
 .user-name {
-font-size: 20px;
-font-weight: 550;
+font-size: 2.125rem;
+font-weight: 800;
+line-height:1.2;
+letter-spacing: -0.02em;
 text-align: center;
 }
   
