@@ -51,6 +51,7 @@ window.function = function (cover,avatar) {
   height: 150px;
   width: 150px;
   margin-top: -75px;
+  margin-left: 20px;
 }
   
   </style>
